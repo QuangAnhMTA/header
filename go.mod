@@ -1,4 +1,4 @@
-module github.com/ent/header
+module ggithub.com/QuangAnhMTA/header
 
 go 1.18
 

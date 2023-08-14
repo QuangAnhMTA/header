@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package account;
-option go_package = "github.com/ent/header/account";
+option go_package = "github.com/QuangAnhMTA/header/account";
 
 message AccountRequest {
   int64 id = 1;
