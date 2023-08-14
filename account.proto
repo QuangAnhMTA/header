@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package account;
+option go_package = "github.com/ent/header/account";
+
+message AccountRequest {
+  int64 id = 1;
+  int64 role_id = 2;
+  string fullname = 3;
+  string avatar = 4;
+  string phone = 5;
+  string password = 6;
+  int32 created = 7;
+  int32 status = 8;
+}
+
+message Account {
+  int64 id = 1;
+  int64 role_id = 2;
+  string fullname = 3;
+  string avatar = 4;
+  string phone = 5;
+  string password = 6;
+  int32 created = 7;
+  int32 status = 8;
+}
+
+message Accounts {
+  repeated Account accounts = 1;
+  int64 total = 2;
+}
